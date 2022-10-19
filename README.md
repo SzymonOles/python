@@ -1,3 +1,2 @@
-# python
-Szymon Oleś
+# Szymon Oleś
 zadania python
