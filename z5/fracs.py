@@ -27,9 +27,9 @@ def add_frac(frac1, frac2):  # frac1 + frac2
 
 
 def sub_frac(frac1, frac2):  # frac1 - frac2
-    f1, f2 = unify(frac1, frac2)
-    f1[0] -= f2[0]
-    return skroc(f1)
+    frac1, frac2 = unify(frac1, frac2)
+    frac1[0] -= frac2[0]
+    return skroc(frac1)
 
 
 def mul_frac(frac1, frac2):  # frac1 * frac2
