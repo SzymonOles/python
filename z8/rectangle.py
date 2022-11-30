@@ -11,8 +11,8 @@ class Rectangle:
         self.pt2 = Point(x2, y2)
 
     @classmethod
-    def from_points(self,PTS):
-        return self(PTS[0].x,PTS[0].y,PTS[1].x,PTS[1].y)
+    def from_points(cls,PTS):
+        return cls(PTS[0].x,PTS[0].y,PTS[1].x,PTS[1].y)
 
     def __str__(self):  # "[(x1, y1), (x2, y2)]"
         return "[({}, {}), ({}, {})]".format(self.pt1.x, self.pt1.y, self.pt2.x, self.pt2.y)
