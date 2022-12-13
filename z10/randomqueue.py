@@ -13,7 +13,7 @@ class RandomQueue:
         item = self.items[n]
         self.items[n] = self.items[-1]
         self.items.pop()
-        return item()
+        return item
 
     def is_empty(self): 
         return not self.items
@@ -23,3 +23,10 @@ class RandomQueue:
 
     def clear(self):    # czyszczenie listy
         self.items.clear()
+
+rq = RandomQueue()
+for i in range(10):
+    rq.insert(i)
+
+for i in range(10):
+    print(rq.remove())
